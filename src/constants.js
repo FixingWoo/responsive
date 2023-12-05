@@ -17,14 +17,14 @@ export const WEIGHTS = {
   bold: 800,
 };
 
-const BREAK_POINTS = {
-  phone: "calc(600px / 16px)",
-  tablet: "calc(950px / 16px)",
-  laptop: "calc(1300px / 16px)",
+export const BREAK_POINTS = {
+  phone: 600,
+  tablet: 950,
+  laptop: 1300,
 };
 
 export const QUERIES = {
-  phoneAndUp: `(max-width: ${BREAK_POINTS.phone}px)`,
-  tableAndUp: `(max-width: ${BREAK_POINTS.tablet}px)`,
-  laptopAndUp: `(max-width: ${BREAK_POINTS.laptop}px)`,
+  phoneAndUp: `(max-width: ${BREAK_POINTS.phone / 16}rem)`,
+  tableAndUp: `(max-width: ${BREAK_POINTS.tablet / 16}rem)`,
+  laptopAndUp: `(max-width: ${BREAK_POINTS.laptop / 16}rem)`,
 };
